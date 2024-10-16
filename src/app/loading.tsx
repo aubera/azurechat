@@ -1,5 +1,9 @@
 import { PageLoader } from "@/features/ui/page-loader";
 
 export default function Loading() {
-  return <PageLoader />;
+  return (
+      <div className="App" data-testid="loading">
+        <PageLoader />
+      </div>
+  );
 }
